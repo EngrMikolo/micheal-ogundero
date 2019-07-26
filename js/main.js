@@ -222,22 +222,28 @@
 		/* submit via ajax */
 		submitHandler: function(form) {
 
+            var data = {
+                name: $('#contactName').val(),
+                email: $('#contactEmail').val(),
+                subject: $('#contactSubject').val(),
+                message: $('#contactMessage')
+            }
+
 			var sLoader = $('#submit-loader');
 
 			$.ajax({      	
-
 		      type: "POST",
-		      url: "inc/sendEmail.php",
-		      data: $(form).serialize(),
+		      url: "/Home/SendEmail",
+		      data: data,
 		      beforeSend: function() { 
 
 		      	sLoader.fadeIn(); 
 
 		      },
-		      success: function(msg) {
+		      success: function(data) {
 
 	            // Message was sent
-	            if (msg == 'OK') {
+	            if (data.Message == 'success') {
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
@@ -246,7 +252,7 @@
 	            // There was an error
 	            else {
 	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
+	               $('#message-warning').html("Something went wrong. Please try again!!.");
 		            $('#message-warning').fadeIn();
 	            }
 

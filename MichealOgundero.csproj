@@ -68,6 +68,7 @@
     <Folder Include="Scripts\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Shared\" />
+    <Folder Include="Email\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -155,6 +156,12 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="images\me_at_work.jpg" />
     <Content Include="images\IMG_0523.jpg" />
+    <Content Include="images\portfolio\cervitech_appicon.JPG" />
+    <Content Include="images\portfolio\a62e823e-f22f-47ab-8e9c-35be0adc0b51.JPG" />
+    <Content Include="images\portfolio\cervitech_logo.JPG" />
+    <Content Include="images\portfolio\cervitech_profile.png" />
+    <Content Include="images\portfolio\cervitech_chart.png" />
+    <Content Include="images\portfolio\cervitech_rating.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -162,6 +169,9 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Email\MailSender.cs" />
+    <Compile Include="Email\MailData.cs" />
+    <Compile Include="Models\SendEmailModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="inc\sendEmail.php" />
