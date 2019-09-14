@@ -210,65 +210,7 @@
 	/*  Placeholder Plugin Settings
 	------------------------------------------------------ */ 
 	$('input, textarea, select').placeholder()  
-
-
-  	/*---------------------------------------------------- */
-	/*	contact form
-	------------------------------------------------------ */
-
-	/* local validation */
-	$('#contactForm').validate({
-
-		/* submit via ajax */
-		submitHandler: function(form) {
-
-            var data = {
-                name: $('#contactName').val(),
-                email: $('#contactEmail').val(),
-                subject: $('#contactSubject').val(),
-                message: $('#contactMessage')
-            }
-
-			var sLoader = $('#submit-loader');
-
-			$.ajax({      	
-		      type: "POST",
-		      url: "/Home/SendEmail",
-		      data: data,
-		      beforeSend: function() { 
-
-		      	sLoader.fadeIn(); 
-
-		      },
-		      success: function(data) {
-
-	            // Message was sent
-	            if (data.Message == 'success') {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html("Something went wrong. Please try again!!.");
-		            $('#message-warning').fadeIn();
-	            }
-
-		      },
-		      error: function() {
-
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again!!!.");
-		         $('#message-warning').fadeIn();
-
-		      }
-
-	      });     		
-  		}
-
-	});
+    
 
 
  	/*----------------------------------------------------- */

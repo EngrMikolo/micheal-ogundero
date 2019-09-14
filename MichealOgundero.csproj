@@ -174,7 +174,6 @@
     <Compile Include="Models\SendEmailModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="inc\sendEmail.php" />
     <None Include="fonts\poppins\poppins-bold-webfont.woff2" />
     <None Include="fonts\poppins\poppins-light-webfont.woff2" />
     <None Include="fonts\poppins\poppins-medium-webfont.woff2" />

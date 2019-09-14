@@ -8,17 +8,18 @@ namespace MichealOgundero
     {
         public static async Task<bool> SendEmail(string fromName, string body, string subject, string senderEmail)
         {
+            body += "     (message from: " + fromName + ",   email: " + senderEmail+")";
+            fromName = "michealogundero.com - " + fromName;
             bool readWebConfig = false;
             string emailStatus = string.Empty;
-            string from = "ogunderoayodeji@gmail.com"; //Replace this with your own correct Gmail Address
-            string to = "ogunderomicheal@yahoo.com";
+            string from = "ogunderoayodeji@gmail.com";
+            string to = "ogunderoayodeji@gmail.com";
 
             string bcc = "";
-            string userName = "ogunderoayodeji@gmail.com";
-            string password = "f@mikolo10";
+            string userName = "devs.cervitech@gmail.com";
+            string password = "anelpo14";
             Attachment attachment = null;
-            //if you want to send attachment, include the file location
-            // Attachment attachment = new Attachment("file location");
+
             SmtpClient client = new SmtpClient();
             client.EnableSsl = true; //Gmail works on Server Secured Layer
             if (!readWebConfig)
