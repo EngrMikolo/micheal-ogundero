@@ -25,8 +25,8 @@
                     <h1>I'm Micheal Ayodeji OGUNDERO.</h1>
 
                     <p class="intro-position">
-                        <span>Lecturer</span>
                         <span>Software Engineer</span>
+                        <span>Lecturer</span>
                         <span>Musicologist</span>
                     </p>
 
@@ -38,7 +38,7 @@
         </div> <!-- /intro-content -->
 
         <ul class="intro-social">
-            <li><a target="_blank" href="https://www.facebook.com/ogundero.micheal"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://github.com/EngrMikolo"><i class="fa fa-github"></i></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/micheal-ogundero-33641478/"><i class="fa fa-linkedin"></i></a></li>
             <li><a target="_blank" href="https://twitter.com/micheal__og"><i class="fa fa-twitter"></i></a></li>
             <li><a target="_blank" href="https://www.youtube.com/channel/UCduDXRFG0_AO94go7WMBNkA/videos"><i class="fa fa-youtube"></i></a></li>
@@ -58,70 +58,72 @@
 
                 <div class="intro-info">
 
-                    <img src="images/me_at_work.jpg" alt="Profile Picture">
+                    <img src="~/images/potrait.jpg" alt="Profile Picture">
 
-                    <p class="lead">I am a lecturer and  a freelance software engineer. I lecture in the department of systems engineering, university of Lagos. I also play the piano and violin. Having undertaken several projects, I am vast in web development and ready to take on projects. I am also currently doing research in the area of brainwaves using some soft computing tools.</p>
+                    <p class="lead">
+                        An ASP.NET MVC and ASP.NET Core backend software engineer with proficient skills in software development, architectural design and documentation. Worked with multinationals in ecommerce and fintech. Currently freelances and offers teaching and mentoring services to young/aspiring software developers. Always ready to work in teams to build viable products.
+                    </p>
                 </div>
 
             </div>
         </div> <!-- /section-intro -->
 
         <div class="row about-content">
-        
-                <div class="col-six tab-full">
 
-                    <h3>Academic Research Areas</h3>
-                    <p>I currently work in the following research areas.</p>
+            @*<div class="col-six tab-full">
 
-                    <ul class="skill-bars">
-                        <li>
-                            <div class="progress percent90"><span>90%</span></div>
-                            <strong>NUMERICAL ANALYSIS</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent90"><span>90%</span></div>
-                            <strong>SOFT COMPUTING</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent80"><span>80%</span></div>
-                            <strong>CONTROL SYSTEMS ENGINEERING</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent75"><span>75%</span></div>
-                            <strong>EXPERT SYSTEMS</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent70"><span>70%</span></div>
-                            <strong>COMPUTATIONAL MECHANICS</strong>
-                        </li>
-                    </ul> <!-- /skill-bars -->
-                    
+                            <h3>Academic Research Areas</h3>
+                            <p>I currently work in the following research areas.</p>
 
-                @*<ul class="info-list">
-            <li>
-                <strong>Fullname:</strong>
-                <span>Micheal Ayodeji Ogundero</span>
-            </li>
-            <li>
-                <strong>Birth Date:</strong>
-                <span>September 28, 1987</span>
-            </li>
-            <li>
-                <strong>Job:</strong>
-                <span>Freelancer, Fullstack Developer, Lecturer</span>
-            </li>
-            <li>
-                <strong>Website:</strong>
-                <span>www.michealogundero.com</span>
-            </li>
-            <li>
-                <strong>Email:</strong>
-                <span>ogunderoayodeji@gmail.com</span>
-            </li>
+                            <ul class="skill-bars">
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>NUMERICAL ANALYSIS</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>SOFT COMPUTING</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent80"><span>80%</span></div>
+                                    <strong>CONTROL SYSTEMS ENGINEERING</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent75"><span>75%</span></div>
+                                    <strong>EXPERT SYSTEMS</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent70"><span>70%</span></div>
+                                    <strong>COMPUTATIONAL MECHANICS</strong>
+                                </li>
+                            </ul>  /skill-bars
 
-        </ul>  /info-list*@
 
-            </div>
+                        <ul class="info-list">
+                    <li>
+                        <strong>Fullname:</strong>
+                        <span>Micheal Ayodeji Ogundero</span>
+                    </li>
+                    <li>
+                        <strong>Birth Date:</strong>
+                        <span>September 28, 1987</span>
+                    </li>
+                    <li>
+                        <strong>Job:</strong>
+                        <span>Freelancer, Fullstack Developer, Lecturer</span>
+                    </li>
+                    <li>
+                        <strong>Website:</strong>
+                        <span>www.michealogundero.com</span>
+                    </li>
+                    <li>
+                        <strong>Email:</strong>
+                        <span>ogunderoayodeji@gmail.com</span>
+                    </li>
+
+                </ul>  /info-list
+
+                    </div>*@
 
             <div class="col-six tab-full">
 
@@ -172,11 +174,15 @@
         </div>
 
         <div class="row button-section">
-            <div class="col-twelve">
-                <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-                <a href="#" title="Download CV" class="button button-primary">Download CV</a>
+            <div>
+
+                <a href="/home/downloadresumedocx" title="Download DOCX" class="button button-primary">Download CV DOCX</a>
+                <a href="/home/downloadresumepdf" title="Download PDF" class="button button-primary">Download CV PDF</a>
+
             </div>
+            <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
         </div>
+
 
     </section> <!-- /process-->
     <!-- resume Section
@@ -206,26 +212,6 @@
 
                 <div class="timeline-wrap">
 
-                    <div class="timeline-block">
-
-                        <div class="timeline-ico">
-                            <i class="fa fa-briefcase"></i>
-                        </div>
-
-                        <div class="timeline-header">
-                            <h3>Assistant Lecturer</h3>
-                            <p>October 2019 - Till Date</p>
-                        </div>
-
-                        <div class="timeline-content">
-                            <h4>Department of Systems Engineering, University of Lagos, Akoka-Yaba, Lagos.</h4>
-                            <p>
-                               Assisting senior lecturers in teaching undergraduate courses (like algorithms & data structures, computer graphics, image processing, ordinary differential equation etc),
-                                research and development
-                            </p>
-                        </div>
-
-                    </div> <!-- /timeline-block -->
 
                     <div class="timeline-block">
 
@@ -234,19 +220,61 @@
                         </div>
 
                         <div class="timeline-header">
-                            <h3>Graduate Assistant</h3>
-                            <p>April 2018 - September 2019</p>
+                            <h3>Contract Software Engineer.</h3>
+                            <p>December 2020 - March 2021</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Department of Systems Engineering, University of Lagos, Akoka-Yaba, Lagos.</h4>
+                            <h4>Polaris Bank Ltd, Victoria Island, Nigeria.</h4>
                             <p>
-                                Assisting senior lecturers in teaching undergraduate courses, some of which are Image processing, computer graphics, engineering computing, engineering statistics, introduction to robotics, introduction to ordinary differential equations.
-                                Managing and overseeing activities at the computational laboratory
+                                &bull; workings of the interaction between Polaris bank and NIBBS for inward and outward transfers to the bank.<br>
+                                &bull; Review of system architecture, integration and performance.<br>
+                                &bull; Review of the transaction status response code to reduce ambiguity.<br>
                             </p>
                         </div>
 
                     </div> <!-- /timeline-block -->
+                    @*<div class="timeline-block">
+
+                            <div class="timeline-ico">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+
+                            <div class="timeline-header">
+                                <h3>Assistant Lecturer</h3>
+                                <p>October 2019 - Till Date</p>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>Department of Systems Engineering, University of Lagos, Akoka-Yaba, Lagos.</h4>
+                                <p>
+                                    Assisting senior lecturers in teaching undergraduate courses (like algorithms & data structures, computer graphics, image processing, ordinary differential equation etc),
+                                    research and development
+                                </p>
+                            </div>
+
+                        </div>  /timeline-block
+
+                        <div class="timeline-block">
+
+                            <div class="timeline-ico">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+
+                            <div class="timeline-header">
+                                <h3>Graduate Assistant</h3>
+                                <p>April 2018 - September 2019</p>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>Department of Systems Engineering, University of Lagos, Akoka-Yaba, Lagos.</h4>
+                                <p>
+                                    Assisting senior lecturers in teaching undergraduate courses, some of which are Image processing, computer graphics, engineering computing, engineering statistics, introduction to robotics, introduction to ordinary differential equations.
+                                    Managing and overseeing activities at the computational laboratory
+                                </p>
+                            </div>
+
+                        </div>  /timeline-block*@
 
                     <div class="timeline-block">
 
@@ -347,8 +375,10 @@
 
                         <div class="timeline-content">
                             <h4>University of Lagos, Akoka-Yaba, Lagos</h4>
-                            <p>I major in Artificial Intelligence and Control systems engineering.
-                            <br> Thesis - Response analysis of brainwaves due to thermal discomfort.</p>
+                            <p>
+                                I major in Artificial Intelligence and Control systems engineering.
+                                <br> Thesis - Response analysis of brainwaves due to thermal discomfort.
+                            </p>
                         </div>
 
                     </div> <!-- /timeline-block -->
@@ -486,7 +516,7 @@
 
                     </div> <!-- /timeline-block -->
 
-                   
+
 
                 </div> <!-- /timeline-wrap -->
 
@@ -598,7 +628,7 @@
 
 
                 <!-- modal popups - begin
-    ============================================================= -->
+                ============================================================= -->
                 <div id="modal-01" class="popup-modal slider mfp-hide">
 
                     <div class="media">
@@ -704,36 +734,35 @@
 
             </div> <!-- /portfolio-wrapper -->
 
-            </div>  <!-- /twelve -->
-
-       <!-- /portfolio-content -->
+        </div>  <!-- /twelve -->
+        <!-- /portfolio-content -->
 
     </section> <!-- /portfolio -->
     <!-- CTA Section
     ================================================== -->
     @*<section id="cta" class="grey-section">
 
-        <div class="row cta-content">
+            <div class="row cta-content">
 
-            <div class="col-twelve section-ads">
+                <div class="col-twelve section-ads">
 
-                <h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+                    <h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
 
-                <p class="lead">
-                    Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-                    Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
-                    <!-- Simply type    the promocode in the box labeled “Promo Code” when placing your order. -->
-                </p>
+                    <p class="lead">
+                        Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+                        Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
+                        <!-- Simply type    the promocode in the box labeled “Promo Code” when placing your order. -->
+                    </p>
 
-                <div class="action">
-                    <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+                    <div class="action">
+                        <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+                    </div>
+
                 </div>
 
-            </div>
+            </div> <!-- /cta-content -->
 
-        </div> <!-- /cta-content -->
-
-    </section> <!-- /cta -->*@
+        </section> <!-- /cta -->*@
     <!-- services Section
     ================================================== -->
     <section id="services">
@@ -746,7 +775,7 @@
                 <h5>Services</h5>
                 <h1>What Can I Do For You?</h1>
 
-                <p class="lead">My services range from academic research to software development area of expertise and also muiscal trainings invloving piano, violin and music theory</p>
+                <p class="lead">My services range from software development area of expertise to muiscal trainings invloving piano, violin and music theory</p>
 
             </div>
         </div> <!-- /section-intro -->
@@ -764,7 +793,9 @@
                         <h3> Software Development</h3>
 
                         <p class="desc">
-                            This involves website development and design of mobile applications (Android and IOS) with robust backend services and database.
+                            &bull; Website Development<br>
+                            &bull; Mobile Applications Design (Android and IOS)<br>
+                            &bull; Solid back-end services and databases<br>
                         </p>
 
                     </div>
@@ -777,10 +808,10 @@
 
                     <div class="service-content">
 
-                        <h3>Programming Tutorial</h3>
+                        <h3>Private Programming Tutorial</h3>
 
                         <p class="desc">
-                            I teach programming languages: C#, Java, Python, Javascript, Mathematica, Matlab etc.
+                            &bull; Teaching and walking people through the learning process till they attain a high proficiency level in C#, Java, Python, Javascript, Mathematics, Matlab, etc.<br>
                         </p>
 
                     </div>
@@ -793,26 +824,13 @@
 
                     <div class="service-content">
 
-                        <h3>Piano / Music Theory</h3>
+                        <h3>Piano / Music Training</h3>
 
                         <p class="desc">
-                            I teach piano & music theory and also prepare candidates for ABRSM graded exams.
-                        </p>
-
-                    </div>
-
-                </div> <!-- /service -->
-
-                <div class="service">
-
-                    <span class="icon"><i class="icon-toggles"></i></span>
-
-                    <div class="service-content">
-
-                        <h3>Choir Trainings and Seminars</h3>
-
-                        <p class="desc">
-                            I train choirs and organize musical seminars that can help bring about excellent musicianship skills.
+                            &bull; Piano Lessons<br>
+                            &bull; Violin Lessons<br>
+                            &bull; Music Theory<br>
+                            &bull; Coaching candidates for ABRSM-graded exams<br>
                         </p>
 
                     </div>
@@ -820,19 +838,34 @@
                 </div> <!-- /service -->
                 @*<div class="service">
 
-            <span class="icon"><i class="icon-chat"></i></span>
+                        <span class="icon"><i class="icon-toggles"></i></span>
 
-            <div class="service-content">
+                        <div class="service-content">
 
-                <h3>Piano and Violin Training</h3>
+                            <h3>Choir Trainings and Seminars</h3>
 
-                <p class="desc">
-                   I teach kids violin and piano. Home lesson available.
-                </p>
+                            <p class="desc">
+                                I train choirs and organize musical seminars that can help bring about excellent musicianship skills.
+                            </p>
 
-            </div>
+                        </div>
 
-        </div>*@ <!-- /service -->
+                    </div>*@ <!-- /service -->
+                @*<div class="service">
+
+                        <span class="icon"><i class="icon-chat"></i></span>
+
+                        <div class="service-content">
+
+                            <h3>Piano and Violin Training</h3>
+
+                            <p class="desc">
+                               I teach kids violin and piano. Home lesson available.
+                            </p>
+
+                        </div>
+
+                    </div>*@ <!-- /service -->
 
             </div> <!-- /services-list -->
 
@@ -850,99 +883,99 @@
 
                     @*<div class="bgrid stat">
 
-                        <div class="icon-part">
-                            <i class="icon-pencil-ruler"></i>
-                        </div>
+                            <div class="icon-part">
+                                <i class="icon-pencil-ruler"></i>
+                            </div>
 
-                        <h3 class="stat-count">
-                            1500
-                        </h3>
+                            <h3 class="stat-count">
+                                1500
+                            </h3>
 
-                        <h5 class="stat-title">
-                            Projects Completed
-                        </h5>
+                            <h5 class="stat-title">
+                                Projects Completed
+                            </h5>
 
-                    </div> <!-- /stat -->
+                        </div> <!-- /stat -->
 
-                    <div class="bgrid stat">
+                        <div class="bgrid stat">
 
-                        <div class="icon-part">
-                            <i class="icon-users"></i>
-                        </div>
+                            <div class="icon-part">
+                                <i class="icon-users"></i>
+                            </div>
 
-                        <h3 class="stat-count">
-                            900
-                        </h3>
+                            <h3 class="stat-count">
+                                900
+                            </h3>
 
-                        <h5 class="stat-title">
-                            Happy Clients
-                        </h5>
+                            <h5 class="stat-title">
+                                Happy Clients
+                            </h5>
 
-                    </div> <!-- /stat -->
+                        </div> <!-- /stat -->
 
-                    <div class="bgrid stat">
+                        <div class="bgrid stat">
 
-                        <div class="icon-part">
-                            <i class="icon-badge"></i>
-                        </div>
+                            <div class="icon-part">
+                                <i class="icon-badge"></i>
+                            </div>
 
-                        <h3 class="stat-count">
-                            200
-                        </h3>
+                            <h3 class="stat-count">
+                                200
+                            </h3>
 
-                        <h5 class="stat-title">
-                            Awards Received
-                        </h5>
+                            <h5 class="stat-title">
+                                Awards Received
+                            </h5>
 
-                    </div> <!-- /stat -->
+                        </div> <!-- /stat -->
 
-                    <div class="bgrid stat">
+                        <div class="bgrid stat">
 
-                        <div class="icon-part">
-                            <i class="icon-light-bulb"></i>
-                        </div>
+                            <div class="icon-part">
+                                <i class="icon-light-bulb"></i>
+                            </div>
 
-                        <h3 class="stat-count">
-                            120
-                        </h3>
+                            <h3 class="stat-count">
+                                120
+                            </h3>
 
-                        <h5 class="stat-title">
-                            Crazy Ideas
-                        </h5>
+                            <h5 class="stat-title">
+                                Crazy Ideas
+                            </h5>
 
-                    </div> <!-- /stat -->
+                        </div> <!-- /stat -->
 
-                    <div class="bgrid stat">
+                        <div class="bgrid stat">
 
-                        <div class="icon-part">
-                            <i class="icon-cup"></i>
-                        </div>
+                            <div class="icon-part">
+                                <i class="icon-cup"></i>
+                            </div>
 
-                        <h3 class="stat-count">
-                            1500
-                        </h3>
+                            <h3 class="stat-count">
+                                1500
+                            </h3>
 
-                        <h5 class="stat-title">
-                            Coffee Cups
-                        </h5>
+                            <h5 class="stat-title">
+                                Coffee Cups
+                            </h5>
 
-                    </div> <!-- /stat -->
+                        </div> <!-- /stat -->
 
-                    <div class="bgrid stat">
+                        <div class="bgrid stat">
 
-                        <div class="icon-part">
-                            <i class="icon-clock"></i>
-                        </div>
+                            <div class="icon-part">
+                                <i class="icon-clock"></i>
+                            </div>
 
-                        <h3 class="stat-count">
-                            7200
-                        </h3>
+                            <h3 class="stat-count">
+                                7200
+                            </h3>
 
-                        <h5 class="stat-title">
-                            Hours
-                        </h5>
+                            <h5 class="stat-title">
+                                Hours
+                            </h5>
 
-                    </div>*@ <!-- /stat -->
+                        </div>*@ <!-- /stat -->
 
                 </div> <!-- /stats-list -->
 
@@ -1022,8 +1055,6 @@
                 <h5>Where to find me</h5>
 
                 <p>
-                    Department of Systems Engineering<br>
-                    University of Lagos, Akoka<br>
                     Lagos, Nigeria.
                 </p>
 
@@ -1040,7 +1071,7 @@
                 <p>
                     ogunderoayodeji@gmail.com<br>
                     ogunderomicheal@yahoo.com<br />
-                    mogundero@unilag.edu.ng
+                    @*mogundero@unilag.edu.ng*@
                 </p>
 
             </div>
@@ -1065,8 +1096,6 @@
     </section> <!-- /contact -->
     <!-- footer
     ================================================== -->
-    
-
     <!-- Java Script
     ================================================== -->
 
@@ -1078,53 +1107,54 @@
 
 
 <script>
-    $('#contactForm').submit(function(e){
-          e.preventDefault();
+
+    $('#contactForm').submit(function (e) {
+        e.preventDefault();
         var data = {
-                name: $('#contactName').val(),
-                email: $('#contactEmail').val(),
-                subject: $('#contactSubject').val(),
-                message: $('#contactMessage').val()
-            }
+            name: $('#contactName').val(),
+            email: $('#contactEmail').val(),
+            subject: $('#contactSubject').val(),
+            message: $('#contactMessage').val()
+        }
 
-        
-            var sLoader = $('#submit-loader');
-            console.log("in contact form");
 
-               $.ajax({
-                type: "POST",
-                url: "/Home/SendEmail",
-                data: data,
-                beforeSend: function () {
+        var sLoader = $('#submit-loader');
+        console.log("in contact form");
 
-                    sLoader.fadeIn();
+        $.ajax({
+            type: "POST",
+            url: "/Home/SendEmail",
+            data: data,
+            beforeSend: function () {
 
-                },
-                success: function (data) {
-                    if (data.Message == 'success') {
-                        sLoader.fadeOut();
-                        $('#message-warning').hide();
-                        $('#contactForm').fadeOut();
-                        $('#message-success').fadeIn();
-                    }
-                    else {
-                        sLoader.fadeOut();
-                        $('#message-warning').html("Something went wrong. Please try again!!.");
-                        $('#message-warning').fadeIn();
-                    }
+                sLoader.fadeIn();
 
-                },
-                error: function () {
-
+            },
+            success: function (data) {
+                if (data.Message == 'success') {
                     sLoader.fadeOut();
-                    $('#message-warning').html("Something went wrong. Please try again!!!.");
-                    $('#message-warning').fadeIn();
-
+                    $('#message-warning').hide();
+                    $('#contactForm').fadeOut();
+                    $('#message-success').fadeIn();
                 }
-    });
+                else {
+                    sLoader.fadeOut();
+                    $('#message-warning').html("Something went wrong. Please try again!!.");
+                    $('#message-warning').fadeIn();
+                }
+
+            },
+            error: function () {
+
+                sLoader.fadeOut();
+                $('#message-warning').html("Something went wrong. Please try again!!!.");
+                $('#message-warning').fadeIn();
+
+            }
+        });
 
 
     })
 
-    </script>
-    
+</script>
+
