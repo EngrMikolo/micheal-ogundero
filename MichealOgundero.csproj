@@ -38,7 +38,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.10.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>packages\Portable.BouncyCastle.1.8.10\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.13.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>packages\MailKit.2.13.0\lib\net45\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=2.13.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>packages\MimeKit.2.13.0\lib\net45\MimeKit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -75,9 +92,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
+    <Folder Include="css\micons\.vs\micons\v16\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\font-awesome\css\font-awesome.css" />
+    <Content Include="css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\fonts.css" />
+    <Content Include="css\micons\fonts\icomoon.svg" />
+    <Content Include="css\micons\micons.css" />
     <Content Include="images\potrait.jpg" />
     <Content Include="Views\Web.config" />
     <Content Include="Web.config" />
@@ -145,21 +169,8 @@
     <Content Include="fonts\poppins\poppins-semibold-webfont.woff" />
     <Content Include="fonts\poppins\stylesheet.css" />
     <Content Include="css\base.css" />
-    <Content Include="css\fonts.css" />
     <Content Include="css\main.css" />
     <Content Include="css\vendor.css" />
-    <Content Include="css\font-awesome\css\font-awesome.css" />
-    <Content Include="css\font-awesome\css\font-awesome.min.css" />
-    <Content Include="css\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="css\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="css\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="css\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="css\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="css\micons\micons.css" />
-    <Content Include="css\micons\fonts\icomoon.eot" />
-    <Content Include="css\micons\fonts\icomoon.svg" />
-    <Content Include="css\micons\fonts\icomoon.ttf" />
-    <Content Include="css\micons\fonts\icomoon.woff" />
     <Content Include="images\favicon.png" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="images\me_at_work.jpg" />
@@ -172,6 +183,7 @@
     <Content Include="images\portfolio\cervitech_rating.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppSettings.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +196,16 @@
   <ItemGroup>
     <Content Include="documents\ogundero_micheal_ayodeji.docx" />
     <Content Include="documents\ogundero_micheal_ayodeji_CV.pdf" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="css\micons\.vs\ProjectSettings.json" />
+    <Content Include="css\micons\.vs\slnx.sqlite" />
+    <Content Include="css\micons\.vs\VSWorkspaceState.json" />
+    <Content Include="css\micons\fonts\icomoon.eot" />
+    <Content Include="css\micons\fonts\icomoon.ttf" />
+    <Content Include="css\micons\fonts\icomoon.woff" />
     <None Include="fonts\poppins\poppins-bold-webfont.woff2" />
     <None Include="fonts\poppins\poppins-light-webfont.woff2" />
     <None Include="fonts\poppins\poppins-medium-webfont.woff2" />
