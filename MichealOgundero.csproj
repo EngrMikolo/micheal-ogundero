@@ -183,7 +183,6 @@
     <Content Include="images\portfolio\cervitech_rating.png" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppSettings.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
