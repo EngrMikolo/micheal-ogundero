@@ -15,10 +15,10 @@
    $(window).load(function() {
 
       // will first fade out the loading animation 
-    	$("#loader").fadeOut("slow", function(){
+    	$("#loader").fadeOut(50, function(){
 
-        // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+			// will fade out the whole DIV that covers the website.
+			$("#preloader").delay(50).fadeOut("fast");
 
       });       
 
