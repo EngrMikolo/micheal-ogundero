@@ -93,13 +93,13 @@
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="css\micons\.vs\micons\v16\" />
+    <Folder Include="images\portfolio\modals\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\font-awesome\css\font-awesome.css" />
     <Content Include="css\font-awesome\css\font-awesome.min.css" />
     <Content Include="css\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="css\fonts.css" />
     <Content Include="css\micons\fonts\icomoon.svg" />
     <Content Include="css\micons\micons.css" />
     <Content Include="images\potrait.jpg" />
@@ -113,23 +113,6 @@
     <Content Include="js\modernizr.js" />
     <Content Include="js\pace.min.js" />
     <Content Include="js\plugins.js" />
-    <Content Include="images\bg.jpg" />
-    <Content Include="images\intro-bg.jpg" />
-    <Content Include="images\logo.png" />
-    <Content Include="images\profile-pic.jpg" />
-    <Content Include="images\sample-image.jpg" />
-    <Content Include="images\portfolio\beetle.jpg" />
-    <Content Include="images\portfolio\clouds.jpg" />
-    <Content Include="images\portfolio\liberty.jpg" />
-    <Content Include="images\portfolio\lighthouse.jpg" />
-    <Content Include="images\portfolio\salad.jpg" />
-    <Content Include="images\portfolio\shutterbug.jpg" />
-    <Content Include="images\portfolio\modals\m-beetle.jpg" />
-    <Content Include="images\portfolio\modals\m-clouds.jpg" />
-    <Content Include="images\portfolio\modals\m-liberty.jpg" />
-    <Content Include="images\portfolio\modals\m-lighthouse.jpg" />
-    <Content Include="images\portfolio\modals\m-salad.jpg" />
-    <Content Include="images\portfolio\modals\m-shutterbug.jpg" />
     <Content Include="fonts\lora\lora-bold-webfont.eot" />
     <Content Include="fonts\lora\lora-bold-webfont.svg" />
     <Content Include="fonts\lora\lora-bold-webfont.ttf" />
@@ -171,16 +154,9 @@
     <Content Include="css\base.css" />
     <Content Include="css\main.css" />
     <Content Include="css\vendor.css" />
-    <Content Include="images\favicon.png" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="images\me_at_work.jpg" />
     <Content Include="images\IMG_0523.jpg" />
-    <Content Include="images\portfolio\cervitech_appicon.JPG" />
-    <Content Include="images\portfolio\cervitech_logo_2.JPG" />
-    <Content Include="images\portfolio\cervitech_logo.JPG" />
-    <Content Include="images\portfolio\cervitech_profile.png" />
-    <Content Include="images\portfolio\cervitech_chart.png" />
-    <Content Include="images\portfolio\cervitech_rating.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -193,18 +169,16 @@
     <Compile Include="Models\SendEmailModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="documents\ogundero_micheal_ayodeji.docx" />
-    <Content Include="documents\ogundero_micheal_ayodeji_CV.pdf" />
     <Content Include="css\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="css\font-awesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="css\font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="css\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="css\micons\.vs\ProjectSettings.json" />
-    <Content Include="css\micons\.vs\slnx.sqlite" />
-    <Content Include="css\micons\.vs\VSWorkspaceState.json" />
     <Content Include="css\micons\fonts\icomoon.eot" />
     <Content Include="css\micons\fonts\icomoon.ttf" />
     <Content Include="css\micons\fonts\icomoon.woff" />
+    <Content Include="documents\ogundero_micheal_ayodeji.docx" />
+    <Content Include="documents\ogundero_micheal_ayodeji_CV.pdf" />
+    <None Include="FolderProfile.pubxml" />
     <None Include="fonts\poppins\poppins-bold-webfont.woff2" />
     <None Include="fonts\poppins\poppins-light-webfont.woff2" />
     <None Include="fonts\poppins\poppins-medium-webfont.woff2" />

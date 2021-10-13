@@ -37,6 +37,27 @@ namespace MichealOgundero
                     Text = "<h2>"+subject +"</h2><br/> <h3>"+ BodyContent + "</h3><br/> <h4>This mail was sent from " + email + "(" + name + ")</h4>"
                 };
 
+
+
+                var senderMimeMessage = new MimeMessage();
+                senderMimeMessage.From.Add(new MailboxAddress("ogunderoayodeji@gmail.com"));
+                senderMimeMessage.To.Add(new MailboxAddress(email));
+                senderMimeMessage.Subject = "Acknowledgement Mail";
+                if (senderMimeMessage.Subject == null)
+                {
+                    senderMimeMessage.Subject = "Acknowledgement Mail";
+                }
+                senderMimeMessage.Body = new TextPart("html")
+                {
+                    Text = "Hi" + name +"," +
+                    "Thanks for contacting me. I would get back to you shortly. Micheal Ogundero"
+                };
+
+
+
+
+
+
                 using (var emailClient = new SmtpClient())
                 {
 
@@ -50,11 +71,12 @@ namespace MichealOgundero
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex.Message);
-                        return "Gmail server failed to authenticate or connect.Sorry! cannot send mail";
+                        return "Gmail server failed to authenticate or connect. Sorry! cannot send mail";
                     }
 
 
                     await emailClient.SendAsync(mimeMessage);
+                    await emailClient.SendAsync(senderMimeMessage);
 
                     await emailClient.DisconnectAsync(true);
 
@@ -70,5 +92,7 @@ namespace MichealOgundero
             }
          
         }
+
+
     }
 }
