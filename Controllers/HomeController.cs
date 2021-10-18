@@ -43,11 +43,8 @@ namespace MichealOgundero.Controllers
 
             //Send the File to Download.
             return File(bytes, "application/octet-stream", fileName);
-
-
-
-
         }
+
         public FileResult DownloadResumePdf()
         {
             //Name the File
@@ -61,7 +58,6 @@ namespace MichealOgundero.Controllers
 
             //Send the File to Download.
             return File(bytes, "application/octet-stream", fileName);
-
         }
     }
 }
